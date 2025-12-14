@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">TripCraft</div>
+      <nav>
+        <ul class="navMenu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <section id="hero" class="hero section">
+      <div class="hero-text-box">
+        <h1 class="hero-header">Explore the World</h1>
+        <p class="hero-text">
+          Discover amazing destinations and create unforgettable memories with
+          our curated travel experiences.
+        </p>
+        <a href="#tours" class="btn">View Tours</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero.jpg" alt="traveling" />
+      </div>
+    </section>
+
+    <section id="tours" class="tours section">
+      <h2 class="section-title">Popular Tours</h2>
+      <div class="tours-grid">
+        <!-- Card 1 -->
+        <div class="tour-card">
+          <div class="tour-image">
+            <img src="./images/paris.jpg" alt="paris" class="card-image" />
+          </div>
+          <div class="card-text">
+            <h3>Paris Getaway</h3>
+            <p>Experience the romance and culture in Paris</p>
+            <p class="price">$1,299</p>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="tour-card">
+          <div class="tour-image">
+            <img
+              src="./images/mountains.jpg"
+              alt="mountains"
+              class="card-image"
+            />
+          </div>
+          <div class="card-text">
+            <h3>Mountain Trip</h3>
+            <p>Journey through breathtaking mountain</p>
+            <p class="price">$899</p>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="tour-card">
+          <div class="tour-image">
+            <img src="./images/sea.jpg" alt="sea" class="card-image" />
+          </div>
+          <div class="card-text">
+            <h3>Beach Paradise</h3>
+            <p>Relax on stunning beaches with crystal waters</p>
+            <p class="price">$1,499</p>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="tour-card">
+          <div class="tour-image">
+            <img src="./images/greece.jpg" alt="greece" class="card-image" />
+          </div>
+          <div class="card-text">
+            <h3>Cultural Journey</h3>
+            <p>Immerse yourself in ancient history and culture</p>
+            <p class="price">$1,199</p>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-container">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn form-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 TripCraft Travel. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
