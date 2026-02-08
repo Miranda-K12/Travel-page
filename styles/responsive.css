@@ -3,16 +3,20 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
   }
+
   .hero-text-box {
     text-align: center;
   }
+
   .btn {
     margin: 0 auto;
   }
+
   .section {
     margin-top: 6.4rem;
   }
@@ -22,20 +26,55 @@
   .tours-grid {
     grid-template-columns: 1fr;
   }
-  nav {
+
+  .header {
+    padding: 1.6rem;
+  }
+
+  .navMenu {
+    justify-content: center;
+    gap: 1.6rem;
+    position: absolute;
+    animation: NavbarSlider 0.5s ease-out;
+    left: 0;
+    right: 0;
+    top: 6.5rem;
+    background-color: #071b75;
+    padding: 1.2rem;
     display: none;
   }
+
+  .navMenu.active {
+    display: flex;
+  }
+
   .hamburger {
     display: block;
     font-size: 3.2rem;
+    cursor: pointer;
   }
+
   .hero-header {
     font-size: 3.6rem;
   }
+
   .section-title {
     font-size: 2.6rem;
   }
+
   .section {
     margin-top: 4.8rem;
+  }
+}
+
+@keyframes NavbarSlider {
+  0% {
+
+    top: 0;
+  }
+
+
+  100% {
+    top: 100%;
   }
 }
